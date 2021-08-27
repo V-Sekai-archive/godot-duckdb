@@ -1,12 +1,12 @@
 #include "register_types.h"
 
 #include "core/object/class_db.h"
-#include "sqlite.h"
+#include "godot_duckdb.h"
 
-void register_sqlite_types() {
-	ClassDB::register_class<SQLite>();
-	ClassDB::register_class<SQLiteQuery>();
+void register_duckdb_types() {
+	ClassDB::register_class<DuckDB>();
+	ClassDB::register_class<DuckDBQuery>();
 }
 
-void unregister_sqlite_types() {
+void unregister_duckdb_types() {
 }
